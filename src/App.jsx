@@ -2,6 +2,10 @@ import { useState } from 'react';
 import '@google/model-viewer';
 import { productos } from './data';
 import { Carrito } from './Carrito';
+import Navbar from './navbar';
+import React from "react";
+
+
 import './App.css';
 
 function App() {
@@ -24,6 +28,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <h1>Tienda 3D</h1>
       <Carrito carrito={carrito} setCarrito={setCarrito} />
       <div className="galeria">
